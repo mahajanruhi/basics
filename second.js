@@ -63,3 +63,24 @@ let newnum = num.filter((val) => {
     return val % 2 === 0;
 });
 console.log(newnum);
+// Events
+let btn1 = document.querySelector("#btn1");
+btn1.onclick = () => {
+    console.log("button was clicked");
+
+}
+//clases and objects
+class Maruticar {
+    constructor(brand) {
+      console.log ("new object");
+      this.brand = brand;
+    }
+    start () {
+        console.log("start");
+    }
+    stop() {
+        console.log("stop");
+    }
+}
+    let fortuner = new Maruticar("fortuner")
+    console.log(fortuner);
